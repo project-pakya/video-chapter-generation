@@ -8,19 +8,13 @@ A complete workflow for video processing, transcription, and chapter generation.
 This repository contains a fully automated video/audio chapter-generation pipeline powered by:
 
 OpenAI Whisper for transcription
-
 MoviePy + OpenCV for media processing
-
 YT-DLP for video downloads
-
 Streamlit for an interactive UI
-
 Cloudflared for secure tunneling & public sharing
-
 All components are auto-generated from the notebook, making it easy to run locally or deploy anywhere.
 
 📂 Project Structure
-
 ├── title (1).ipynb          # Notebook that generates pipeline + app files
 ├── chapter_pipeline.py      # Core logic for downloading, transcribing, chaptering
 ├── streamlit_app.py         # Streamlit frontend
@@ -28,7 +22,6 @@ All components are auto-generated from the notebook, making it easy to run local
 
 ✨ Features
 🔥 Core Functionalities
-
 ✔ Download YouTube videos using YT-DLP
 ✔ Extract audio/video frames
 ✔ Run Whisper transcription (CPU/GPU)
@@ -48,36 +41,24 @@ streamlit run streamlit_app.py
 
 🌐 Public URL via Cloudflared
 cloudflared tunnel --url http://localhost:8501
-
-
 This provides a secure public link you can share.
 
 🧠 How It Works
-
 Input: User uploads a video or pastes a YouTube URL
 
 Pipeline:
-
 Downloads video
-
 Extracts audio
-
 Runs Whisper transcription
-
 Identifies chapter boundaries
-
 Summaries timestamps + topics
 
 Output:
-
 Readable chapter summary
-
 JSON metadata
-
 Downloadable files
 
 UI:
-
 Results displayed on Streamlit with expanders, plots, and downloads
 
 📦 Outputs
@@ -86,50 +67,21 @@ transcript.json	Raw Whisper transcription with timestamps
 chapters.json	Auto-generated chapters
 .txt summary	Readable chapter summaries
 Audio/video snippets	Optional generated segments
+
 🧪 Example Use Cases
 
 Auto-chapter long video lectures
-
 Podcast → structured content
-
 YouTube long-form summarization
-
 Educational content indexing
-
 Multi-speaker meeting archives
 
-🚀 Deployment Options
-
-You can deploy using:
-
-Streamlit Cloud
-
-HuggingFace Spaces
-
-AWS EC2 / Lambda
-
-GCP Cloud Run
-
-Azure Container Apps
-
-Ask me if you want the deployment guide!
 
 🏗 Tech Stack
+
 Component	Tools
 Transcription	OpenAI Whisper
 Video/Audio	MoviePy, OpenCV
 Downloads	yt-dlp
 Web UI	Streamlit
 Tunneling	Cloudflared
-🤝 Contributing
-
-Pull requests are welcome!
-Please open an issue if you’d like to request a new feature.
-
-📜 License
-
-This project is released under the MIT License.
-
-⭐ Support
-
-If you like this project, please give it a star ⭐ on GitHub!
