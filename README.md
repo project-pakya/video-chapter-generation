@@ -74,11 +74,4 @@ cloudflared tunnel --url http://localhost:8501
 - Long YouTube video summarization  
 - Meeting archives  
 
-## 🚀 Deployment
-Supports Streamlit Cloud, HuggingFace Spaces, AWS, GCP, Azure.
 
-## 🤝 Contributing
-PRs welcome. Open issues for new features.
-
-## 📜 License
-MIT License.
