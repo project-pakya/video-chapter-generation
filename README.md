@@ -20,7 +20,7 @@ Cloudflared for secure tunneling & public sharing
 All components are auto-generated from the notebook, making it easy to run locally or deploy anywhere.
 
 📂 Project Structure
-.
+
 ├── title (1).ipynb          # Notebook that generates pipeline + app files
 ├── chapter_pipeline.py      # Core logic for downloading, transcribing, chaptering
 ├── streamlit_app.py         # Streamlit frontend
